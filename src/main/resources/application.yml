@@ -1,10 +1,13 @@
 server:
-  port: 80
+  port: 9000
 
 
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://sh-cynosdbmysql-grp-8civhowq.sql.tencentcdb.com:20444/springboot_demo?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+#    username: root
+#    password: WOaiwojia110
     url: jdbc:mysql://${MYSQL_ADDRESS}/${MYSQL_DATABASE:springboot_demo}
     username: ${MYSQL_USERNAME}
     password: ${MySQL_PASSWORD}
